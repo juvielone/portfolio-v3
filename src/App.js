@@ -9,6 +9,7 @@ import Loader from "./layout/Load/Loader";
 import Heading from "./sections/Hero/Heading";
 import About from "./sections/About/About";
 import Skills from "./sections/Skills/Skills";
+import Proj from "./sections/Projects/Proj";
 
 
 function App() {
@@ -38,6 +39,7 @@ function App() {
             <SocialIcons />
             <About />
             <Skills />
+            <Proj />
           </motion.div>
         )}
 
