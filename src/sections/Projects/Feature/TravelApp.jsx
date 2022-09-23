@@ -1,5 +1,4 @@
 import React from "react";
-import reduxSVG from "../img/redux.svg";
 import tripTAB from "../img/trip-tablet.png";
 import tripCP from "../img/trip-pc.png";
 
@@ -33,7 +32,11 @@ const TravelApp = () => {
           <button
             type="button"
             class="btn ms-3"
-            style={{ backgroundColor: "#00ADB5", color: "white" }}
+            style={{
+              backgroundColor: "#00ADB5",
+              color: "white",
+              marginTop: "1rem",
+            }}
           >
             <i class="fa-brands fa-react pe-2"></i>
             React

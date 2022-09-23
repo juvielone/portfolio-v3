@@ -8,7 +8,7 @@ const Proj = () => {
     <>
       <div className="container section-proj">
         <section className="pb-5 pt-5">
-          <h1 className="pb-3 text-center">Some of my Works</h1>
+          <h1 className="pb-5 text-center">Some of my Works</h1>
 
           <VetApp />
           <TravelApp />
