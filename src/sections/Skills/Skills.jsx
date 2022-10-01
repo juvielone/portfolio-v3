@@ -52,6 +52,7 @@ const Skills = () => {
   return (
     <>
       <motion.section
+        id="skillMe"
         variants={container}
         initial="hidden"
         whileInView="show"
@@ -150,7 +151,7 @@ const Skills = () => {
               variants={item}
               transition={{ delay: 2 }}
             >
-              <a href="" className="cta-link">
+              <a href="#" className="cta-link">
                 <motion.h2
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.9 }}

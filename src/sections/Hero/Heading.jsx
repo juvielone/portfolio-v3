@@ -1,7 +1,7 @@
 import "./Hero.scss";
 import { motion } from "framer-motion";
 import { container, yItem, xItem } from "../../animations/animations";
-const Heading = () => {
+const Heading = ({ projects, scrollToSection }) => {
   return (
     <>
       <section className="container heading-section">
@@ -36,24 +36,26 @@ const Heading = () => {
           <motion.div variants={xItem} className="row mt-4">
             <div className="col-lg-5 col-md-12 col-sm-5">
               <p>
-                <span>01.</span> A full stack web developer creating and
-                designing websites Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit. Urna bibendum ultrices sagittis dictum massa.
-                Viverra adipiscing sem odio et tortor viverra.
+                <span>01.</span> A full stack web developer, with experience in
+                creating and managing static and dynamic pages through the web.
+                I build and design modern intuitive websites and applications .
               </p>
             </div>
           </motion.div>
 
           <motion.div className="row" variants={yItem}>
             <div className="col-lg-3 col-md-6 col-sm-12 btn-group">
-              <button className="btn btn-primary btn-proj btn-xl">
+              <button
+                onClick={() => scrollToSection(projects)}
+                className="btn btn-primary btn-proj btn-xl"
+              >
                 View Projects <i class="bi bi-stack iconer-1"></i>
               </button>
             </div>
 
             <div className="col-lg-3 col-md-6 col-sm-12 btn-group">
               <button className="btn btn-outline-primary btn-con">
-                Contacts <i class="bi bi-person-fill iconer-2"></i>
+                Get In Touch <i class="bi bi-person-fill iconer-2"></i>
               </button>
             </div>
           </motion.div>

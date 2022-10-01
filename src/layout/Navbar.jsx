@@ -62,17 +62,17 @@ const Navbar = () => {
         <motion.div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
             <motion.li className="nav-item me-5" variants={xItem}>
-              <a className="nav-link" aria-current="page" href="#">
-                Home
-              </a>
-            </motion.li>
-            <motion.li className="nav-item me-5" variants={xItem}>
-              <a className="nav-link" href="#">
+              <a className="nav-link" href="#aboutMe">
                 About
               </a>
             </motion.li>
             <motion.li className="nav-item me-5" variants={xItem}>
-              <a className="nav-link" href="#">
+              <a className="nav-link" aria-current="page" href="#skillMe">
+                Skill
+              </a>
+            </motion.li>
+            <motion.li className="nav-item me-5" variants={xItem}>
+              <a className="nav-link" href="#projectsMe">
                 Projects
               </a>
             </motion.li>

@@ -7,7 +7,7 @@ const GithubApp = () => {
     <>
       <div className="row proj-content">
         <div className="col-lg-6 pt-5">
-          <h2 className="pb-3 proj-title">GitFinder</h2>
+          <h2 className="pb-3 proj-title">DevFinder</h2>
           {/* Skill Req ============================================== */}
           <button
             type="button"
@@ -30,23 +30,24 @@ const GithubApp = () => {
           {/* ============================================ */}
 
           <p className="pt-5">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
-            soluta quaerat vel nobis ab temporibus mollitia, recusandae delectus
-            neque, pariatur excepturi ea voluptates saepe totam culpa explicabo
-            unde ipsum. Ad.
+            Devfinder is a web application that lets you search a piece of
+            github developer information such as location, company, and their
+            newly created repositories
           </p>
 
           {/* CTA ================================================================== */}
           <div className="mt-5 proj-link">
-            <button
-              className="btn me-5 btn-code"
-              style={{ backgroundColor: "#31363F", color: "white" }}
-            >
-              Code
-              <i class="bi bi-github"></i>
-            </button>
+            <a href="https://github.com/juvielone/devfinder" target="_blank">
+              <button
+                className="btn me-5 btn-code"
+                style={{ backgroundColor: "#31363F", color: "white" }}
+              >
+                Code
+                <i class="bi bi-github"></i>
+              </button>
+            </a>
 
-            <a href="" className="">
+            <a href="https://devfinder-nine.vercel.app/" target="_blank">
               <span className="cta-link">View Project</span>
               <i class="bi bi-arrow-right-circle"></i>
             </a>

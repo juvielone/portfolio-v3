@@ -44,23 +44,28 @@ const TravelApp = () => {
           {/* ============================================ */}
 
           <p className="pt-5">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
-            soluta quaerat vel nobis ab temporibus mollitia, recusandae delectus
-            neque, pariatur excepturi ea voluptates saepe totam culpa explicabo
-            unde ipsum. Ad.
+            It is a web travel application using Google Maps. With Geolocation,
+            Google Maps API. Fetching restaurants, hotels, and attractions based
+            on the location from specialized Rapid APIs, data filtering, and
+            much more
           </p>
 
           {/* CTA ================================================================== */}
           <div className="mt-5 proj-link">
-            <button
-              className="btn me-5 btn-code"
-              style={{ backgroundColor: "#31363F", color: "white" }}
+            <a
+              href="https://github.com/juvielone/travel_advisor"
+              target="_blank"
             >
-              Code
-              <i class="bi bi-github"></i>
-            </button>
+              <button
+                className="btn me-5 btn-code"
+                style={{ backgroundColor: "#31363F", color: "white" }}
+              >
+                Code
+                <i class="bi bi-github"></i>
+              </button>
+            </a>
 
-            <a href="" className="">
+            <a href="https://mydailyguide.netlify.app/" target="_blank">
               <span className="cta-link">View Project</span>
               <i class="bi bi-arrow-right-circle"></i>
             </a>

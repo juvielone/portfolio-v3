@@ -1,4 +1,4 @@
-import React, { Fragment, useEffect, useState } from "react";
+import React, { Fragment, useEffect, useState, useRef } from "react";
 import { motion, AnimatePresence, AnimateSharedLayout } from "framer-motion";
 
 import SocialIcons from "./layout/Socials/Socials"
@@ -10,15 +10,27 @@ import Heading from "./sections/Hero/Heading";
 import About from "./sections/About/About";
 import Skills from "./sections/Skills/Skills";
 import Proj from "./sections/Projects/Proj";
+import Contact from "./sections/Contact/Contact";
+import Footer from "./sections/Footer/Footer";
 
 
 function App() {
 
-  const [loading, setLoading] = useState(false)
+  const [loading, setLoading] = useState(true)
+
+  const projects = useRef(null);
+
+  const scrollToSection = (elementRef) => {
+    window.scrollTo({
+      top: elementRef.current.offsetTop,
+      behavior: "smooth",
+    });
+  };
 
   useEffect(() => {
     console.log(loading);
   }, [loading]);
+
 
   return <Fragment>
     <AnimateSharedLayout type="crossfade" >
@@ -34,12 +46,14 @@ function App() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
           >
-            <Navbar />
-            <Heading />
+            <Navbar scrollToSection={scrollToSection} />
+            <Heading projects={projects} scrollToSection={scrollToSection} />
             <SocialIcons />
             <About />
             <Skills />
-            <Proj />
+            <Proj projects={projects} />
+            <Contact />
+            <Footer />
           </motion.div>
         )}
 

@@ -29,23 +29,26 @@ const VetApp = () => {
           {/* ============================================ */}
 
           <p className="pt-5">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
-            soluta quaerat vel nobis ab temporibus mollitia, recusandae delectus
-            neque, pariatur excepturi ea voluptates saepe totam culpa explicabo
-            unde ipsum. Ad.
+            A full stack appointment system that book and record the user's pet
+            service and check-up. Powered by JSON Web Token to validate and
+            reject users' login and registration. This app is handled by
+            intensive state management "Redux" Admin has CRUD control on user
+            and appointment created.
           </p>
 
           {/* CTA ================================================================== */}
           <div className="mt-5 proj-link">
-            <button
-              className="btn me-5 btn-code"
-              style={{ backgroundColor: "#31363F", color: "white" }}
-            >
-              Code
-              <i class="bi bi-github"></i>
-            </button>
+            <a href="https://github.com/juvielone/vet2" target="_blank">
+              <button
+                className="btn me-5 btn-code"
+                style={{ backgroundColor: "#31363F", color: "white" }}
+              >
+                Code
+                <i class="bi bi-github"></i>
+              </button>
+            </a>
 
-            <a href="" className="">
+            <a href="https://vet-app.onrender.com/" target="_blank">
               <span className="cta-link">View Project</span>
               <i class="bi bi-arrow-right-circle"></i>
             </a>

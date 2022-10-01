@@ -1,5 +1,8 @@
 import React from "react";
 import profile from "./profile.jpg";
+import myResume from "./myresume.pdf";
+import myPic from "./miPic.png";
+
 import shapes from "./shapes.svg";
 import { motion } from "framer-motion";
 
@@ -61,6 +64,7 @@ const About = () => {
   return (
     <>
       <motion.section
+        id="aboutMe"
         variants={container}
         initial="hidden"
         whileInView="show"
@@ -69,17 +73,17 @@ const About = () => {
         className="container about-section"
       >
         <div className="row">
-          <div className="col-lg-6">
+          <div className="col-lg-5">
             <figure class="figure">
               <motion.img
                 variants={itemMain}
-                src={profile}
-                class="figure-img img-fluid rounded mx-5 profile"
+                src={myPic}
+                class="figure-img img-fluid mx-5 profile"
                 alt="Profile"
               />
             </figure>
           </div>
-          <div className="col-lg-6">
+          <div className="col-lg-7">
             <motion.h1 variants={itemMain} className="about-heading">
               About Me
               <motion.svg
@@ -103,14 +107,17 @@ const About = () => {
             </motion.h1>
 
             <motion.p variants={item} className="about-desc">
-              <span>02. </span>Lorem ipsum dolor, sit amet consectetur
-              adipisicing elit. Exercitationem nobis deleniti expedita
-              repellendus consequatur commodi animi nam vero vitae laboriosam
-              quo, eaque aliquid esse quae sunt voluptates tempora eum
-              obcaecati?
+              <span>02. </span>I'm currently in my fourth year pursuing a BS in
+              Information Technology at New Era University, Quezon City Manila.
+              I enjoy creating and designing things that live on the internet. I
+              have a deep understanding of modern design principles that are
+              effective for enhancing the human experience.
             </motion.p>
 
-            <motion.a href="google.com">
+            <motion.a
+              href="https://drive.google.com/file/d/1PaSZxiy0yE_W4ifGxMTulXjmXKiHXg1m/view?usp=sharing"
+              target="_blank"
+            >
               <motion.h2
                 variants={item}
                 whileHover={{ scale: 1.1 }}
