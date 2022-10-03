@@ -1,4 +1,5 @@
 import React from "react";
+import "./Contact.scss";
 
 const Contact = () => {
   return (
@@ -8,7 +9,7 @@ const Contact = () => {
       style={{ paddingBottom: "8rem" }}
     >
       <h1 className="pt-5">Get In Touch</h1>
-      <p style={{ width: "30rem", marginLeft: "35%" }} className="pt-5">
+      <p className="pt-5 contact-msg container">
         Hi, I’m currently looking for any new opportunities, my inbox is always
         open. Whether you have a question or just want to say hi, I’ll try my
         best to get back to you!

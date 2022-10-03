@@ -1,12 +1,52 @@
 import React from "react";
 import tripTAB from "../img/trip-tablet.png";
 import tripCP from "../img/trip-pc.png";
+import { motion } from "framer-motion";
 
 const TravelApp = () => {
+  const container = {
+    show: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.35,
+      },
+    },
+  };
+
+  const item = {
+    hidden: { opacity: 0, x: 100 },
+    show: {
+      opacity: 1,
+      x: 0,
+      transition: {
+        ease: [0.6, 0.01, -0.05, 0.95],
+        duration: 1.5,
+      },
+    },
+  };
+
+  const itemMain = {
+    hidden: { opacity: 0, y: 200 },
+    show: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        ease: [0.6, 0.01, -0.05, 0.95],
+        duration: 1.5,
+      },
+    },
+  };
   return (
     <>
-      <div className="row proj-content">
-        <div className="col-lg-6 pt-5">
+      <motion.div
+        className="row proj-content"
+        variants={container}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: false, amount: 0.3 }}
+        exit="exit"
+      >
+        <motion.div className="col-lg-6 pt-5" variants={item}>
           <h2 className="pb-3 proj-title">Daily Guide</h2>
           {/* Skill Req ============================================== */}
           <button
@@ -70,18 +110,22 @@ const TravelApp = () => {
               <i class="bi bi-arrow-right-circle"></i>
             </a>
           </div>
-        </div>
+        </motion.div>
 
         {/*  */}
-        <div className="col-lg-6 row">
+        <motion.div className="col-lg-6 row" variants={item}>
           <div className="col-lg-6">
-            <img src={tripTAB} alt="vet pc" className="mockup-tablet" />
+            <img
+              src={tripTAB}
+              alt="vet pc"
+              className="mockup-tablet travel-img"
+            />
           </div>
           <div className="col-lg-6">
             <img src={tripCP} alt="vet cp" className="mockup-cp" />
           </div>
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
     </>
   );
 };

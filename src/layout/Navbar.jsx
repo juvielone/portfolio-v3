@@ -13,7 +13,7 @@ const Navbar = () => {
   };
 
   const xItem = {
-    hidden: { opacity: 0, y: -100 },
+    hidden: { opacity: 1, y: -200 },
     show: {
       opacity: 1,
       y: 0,
@@ -77,7 +77,9 @@ const Navbar = () => {
               </a>
             </motion.li>
             <motion.li className="nav-item me-5" variants={xItem}>
-              <a className="nav-link">Contact</a>
+              <a className="nav-link" href="#contact-section">
+                Contact
+              </a>
             </motion.li>
           </ul>
         </motion.div>

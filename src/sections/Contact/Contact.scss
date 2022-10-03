@@ -1,0 +1,12 @@
+.contact-msg {
+  margin-left: 28rem;
+  width: 40rem;
+}
+
+// Phone 415 above
+@media only screen and (max-width: 415px) {
+  .contact-msg {
+    width: fit-content;
+    margin-left: 0;
+  }
+}

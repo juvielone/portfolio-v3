@@ -1,6 +1,5 @@
 import React from "react";
-import profile from "./profile.jpg";
-import myResume from "./myresume.pdf";
+
 import myPic from "./miPic.png";
 
 import shapes from "./shapes.svg";
@@ -78,7 +77,7 @@ const About = () => {
               <motion.img
                 variants={itemMain}
                 src={myPic}
-                class="figure-img img-fluid mx-5 profile"
+                className="figure-img img-fluid mx-5 profile btn"
                 alt="Profile"
               />
             </figure>
@@ -115,7 +114,7 @@ const About = () => {
             </motion.p>
 
             <motion.a
-              href="https://drive.google.com/file/d/1PaSZxiy0yE_W4ifGxMTulXjmXKiHXg1m/view?usp=sharing"
+              href="https://drive.google.com/file/d/1k0Qt_gM5aKopQrZp3JEssWSZ_uJk98F1/view?usp=sharing"
               target="_blank"
             >
               <motion.h2

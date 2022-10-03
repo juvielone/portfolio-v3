@@ -1,12 +1,53 @@
 import React from "react";
 import gitlap from "../img/git-lap.png";
 import gitcp from "../img/git-cp.png";
+import { motion } from "framer-motion";
 
 const GithubApp = () => {
+  const container = {
+    show: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.35,
+      },
+    },
+  };
+
+  const item = {
+    hidden: { opacity: 0, x: 100 },
+    show: {
+      opacity: 1,
+      x: 0,
+      transition: {
+        ease: [0.6, 0.01, -0.05, 0.95],
+        duration: 1.5,
+      },
+    },
+  };
+
+  const itemMain = {
+    hidden: { opacity: 0, y: 200 },
+    show: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        ease: [0.6, 0.01, -0.05, 0.95],
+        duration: 1.5,
+      },
+    },
+  };
+
   return (
     <>
-      <div className="row proj-content">
-        <div className="col-lg-6 pt-5">
+      <motion.div
+        className="row proj-content"
+        variants={container}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: false, amount: 0.3 }}
+        exit="exit"
+      >
+        <motion.div className="col-lg-6 pt-5" variants={item}>
           <h2 className="pb-3 proj-title">DevFinder</h2>
           {/* Skill Req ============================================== */}
           <button
@@ -52,18 +93,23 @@ const GithubApp = () => {
               <i class="bi bi-arrow-right-circle"></i>
             </a>
           </div>
-        </div>
+        </motion.div>
 
         {/*  */}
-        <div className="col-lg-6 row">
+        <motion.div className="col-lg-6 row" variants={item}>
           <div className="col-lg-6">
-            <img src={gitlap} alt="vet pc" className="mockup-pc" />
+            <img
+              src={gitlap}
+              alt="vet pc"
+              className="mockup-pc"
+              variants={itemMain}
+            />
           </div>
           <div className="col-lg-6">
             <img src={gitcp} alt="vet cp" className="mockup-cp" />
           </div>
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
     </>
   );
 };
