@@ -13,7 +13,7 @@ const Heading = ({ projects, scrollToSection }) => {
           className="row main-heading"
         >
           <div className="col-lg-9 col-sm-12">
-            <motion.h1 variants={yItem}>Juvielones Joshua Lagos</motion.h1>
+            <motion.h1 variants={yItem}>Juvielone Joshua Lagos</motion.h1>
 
             <div className="row mt-3">
               <motion.h2

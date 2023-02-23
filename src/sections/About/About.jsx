@@ -114,7 +114,7 @@ const About = () => {
             </motion.p>
 
             <motion.a
-              href="https://drive.google.com/file/d/1k0Qt_gM5aKopQrZp3JEssWSZ_uJk98F1/view?usp=sharing"
+              href="https://drive.google.com/file/d/1Sh3PNG5m81Dd9PWTQgNg0uRj4RAzTO2h/view?usp=sharing"
               target="_blank"
             >
               <motion.h2
